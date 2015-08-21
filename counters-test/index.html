@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("img.up").click(function(){
+      var counter = parseInt($(this).next().html(), 10);
+      if (counter > 9) return;
+      else
+        $(this).next().html(counter + 1);
+    });
+    $("img.down").click(function(){
+      var counter = parseInt($(this).prev().html(), 10);
+      if (counter < 1) return;
+      else
+        $(this).prev().html(counter - 1);
+    })
+  });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <img src="logo.png" alt="Logo" />
+
+      <h1>Web<br />Design<br />Blog</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="javascript:void();" title="Home">Home</a></li>
+        <li><a href="javascript:void();" title="About">About</a></li>
+        <li><a href="javascript:void();" title="Portfolio">Portfolio</a></li>
+        <li><a href="javascript:void();" title="Blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <section class="grey">
+      <aside>
+        <img class="up" src="thumb-up-dark.png" alt="Vote Up" />
+        <span>0</span>
+        <img class="down" src="thumb-down-dark.png" alt="Vote Down" />
+      </aside>
+
+      <article>
+        <h2 class="a__bi">Heading One</h2>
+
+        <p class="a__rg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies dui massa, at dapibus eros rutrum nec. Suspendisse sed pellentesque urna. Vivamus mattis purus orci, in maximus risus sollicitudin eu. Vivamus malesuada nisl ac viverra eleifend. Vestibulum accumsan mi a mi bibendum, ac commodo metus iaculis. Integer rhoncus massa metus. Duis commodo risus est, nec egestas orci maximus at. Etiam fringilla commodo velit, in volutpat odio. Sed eget mauris sed elit tempus tincidunt. Nulla dignissim mollis diam nec blandit.</p>
+        <p class="a__rg">Pellentesque at lobortis nisi. Proin sit amet magna id libero aliquet pulvinar in quis libero. Vestibulum sed euismod nisl. Suspendisse sodales pretium enim. Ut tincidunt felis a condimentum auctor. Sed cursus ut arcu sed efficitur. Morbi nec posuere nisl. Vestibulum gravida magna egestas lectus posuere, vitae porta neque pharetra.</p>
+        <p class="a__rg tags"><a href="javascript:void();" title="Tag 1">#tag1</a><a href="javascript:void();" title="Tag 2">#tag2</a><a href="javascript:void();" title="Tag 3">#tag3</a></p>
+      </article>
+
+      <div class="clear"></div>
+    </section>
+
+    <section class="maroon">
+      <aside>
+        <img class="up" src="thumb-up-light.png" alt="Vote Up" />
+        <span>0</span>
+        <img class="down" src="thumb-down-light.png" alt="Vote Down" />
+      </aside>
+
+      <article>
+        <h2 class="a__bi">Heading One</h2>
+
+        <p class="a__rg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies dui massa, at dapibus eros rutrum nec. Suspendisse sed pellentesque urna. Vivamus mattis purus orci, in maximus risus sollicitudin eu. Vivamus malesuada nisl ac viverra eleifend. Vestibulum accumsan mi a mi bibendum, ac commodo metus iaculis. Integer rhoncus massa metus. Duis commodo risus est, nec egestas orci maximus at. Etiam fringilla commodo velit, in volutpat odio. Sed eget mauris sed elit tempus tincidunt. Nulla dignissim mollis diam nec blandit.</p>
+        <p class="a__rg">Pellentesque at lobortis nisi. Proin sit amet magna id libero aliquet pulvinar in quis libero. Vestibulum sed euismod nisl. Suspendisse sodales pretium enim. Ut tincidunt felis a condimentum auctor. Sed cursus ut arcu sed efficitur. Morbi nec posuere nisl. Vestibulum gravida magna egestas lectus posuere, vitae porta neque pharetra.</p>
+        <p class="a__rg tags"><a href="javascript:void();" title="Tag 1">#tag1</a><a href="javascript:void();" title="Tag 2">#tag2</a><a href="javascript:void();" title="Tag 3">#tag3</a></p>
+      </article>
+
+      <div class="clear"></div>
+    </section>
+
+    <section class="grey">
+      <aside>
+        <img class="up" src="thumb-up-dark.png" alt="Vote Up" />
+        <span>0</span>
+        <img class="down" src="thumb-down-dark.png" alt="Vote Down" />
+      </aside>
+
+      <article>
+        <h2 class="a__bi">Heading One</h2>
+
+        <p class="a__rg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies dui massa, at dapibus eros rutrum nec. Suspendisse sed pellentesque urna. Vivamus mattis purus orci, in maximus risus sollicitudin eu. Vivamus malesuada nisl ac viverra eleifend. Vestibulum accumsan mi a mi bibendum, ac commodo metus iaculis. Integer rhoncus massa metus. Duis commodo risus est, nec egestas orci maximus at. Etiam fringilla commodo velit, in volutpat odio. Sed eget mauris sed elit tempus tincidunt. Nulla dignissim mollis diam nec blandit.</p>
+        <p class="a__rg">Pellentesque at lobortis nisi. Proin sit amet magna id libero aliquet pulvinar in quis libero. Vestibulum sed euismod nisl. Suspendisse sodales pretium enim. Ut tincidunt felis a condimentum auctor. Sed cursus ut arcu sed efficitur. Morbi nec posuere nisl. Vestibulum gravida magna egestas lectus posuere, vitae porta neque pharetra.</p>
+        <p class="a__rg tags"><a href="javascript:void();" title="Tag 1">#tag1</a><a href="javascript:void();" title="Tag 2">#tag2</a><a href="javascript:void();" title="Tag 3">#tag3</a></p>
+      </article>
+
+      <div class="clear"></div>
+    </section>
+
+    <section class="maroon">
+      <aside>
+        <img class="up" src="thumb-up-light.png" alt="Vote Up" />
+        <span>0</span>
+        <img class="down" src="thumb-down-light.png" alt="Vote Down" />
+      </aside>
+
+      <article>
+        <h2 class="a__bi">Heading One</h2>
+
+        <p class="a__rg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies dui massa, at dapibus eros rutrum nec. Suspendisse sed pellentesque urna. Vivamus mattis purus orci, in maximus risus sollicitudin eu. Vivamus malesuada nisl ac viverra eleifend. Vestibulum accumsan mi a mi bibendum, ac commodo metus iaculis. Integer rhoncus massa metus. Duis commodo risus est, nec egestas orci maximus at. Etiam fringilla commodo velit, in volutpat odio. Sed eget mauris sed elit tempus tincidunt. Nulla dignissim mollis diam nec blandit.</p>
+        <p class="a__rg">Pellentesque at lobortis nisi. Proin sit amet magna id libero aliquet pulvinar in quis libero. Vestibulum sed euismod nisl. Suspendisse sodales pretium enim. Ut tincidunt felis a condimentum auctor. Sed cursus ut arcu sed efficitur. Morbi nec posuere nisl. Vestibulum gravida magna egestas lectus posuere, vitae porta neque pharetra.</p>
+        <p class="a__rg tags"><a href="javascript:void();" title="Tag 1">#tag1</a><a href="javascript:void();" title="Tag 2">#tag2</a><a href="javascript:void();" title="Tag 3">#tag3</a></p>
+      </article>
+
+      <div class="clear"></div>
+    </section>
+
+    <footer>
+      <aside></aside>
+      <p>&copy; Copyright 2013</p>
+    </footer>
+  </div>
+</body>
+</html>
